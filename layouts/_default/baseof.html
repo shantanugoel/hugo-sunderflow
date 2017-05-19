@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ .Title }}</title>
+    <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
+    <meta name="keywords" content='{{ with .Params.tags }}{{ delimit . "," }}{{ else }}{{ delimit .Site.Params.keywords "," }}{{ end }}' />
+
+    <!-- Site Meta -->
+    {{ with .Params.author }}
+        <meta name="author" content="{{ . }}" />
+    {{ end }}
+    {{ with .Site.Params.favicon }}
+        <link rel="icon" type="image/png" href="{{ . }}" sizes="196x196" />
+    {{ end }}
+    <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+
+    <!-- CSS -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="/js/main.js"></script>
+
+    <!-- Extras -->
+    {{ template "_internal/opengraph.html" . }}
+    {{ template "_internal/google_news.html" . }}
+    {{ template "_internal/schema.html" . }}
+    {{ template "_internal/twitter_cards.html" . }}
+</head>
+<body>
+{{ block "body" . }}
+    <header class="site-header">
+        {{ partial "navbar" . }}
+    </header>
+    <section class="site-main container">
+      <div class="row row-eq">
+        <div class="content col-md-9 col-eq">
+            {{ block "content" . }}
+            {{ end }}
+        </div>
+        <div class="col-md-3 col-eq side-menu">
+          <aside  id="side-menu">
+            {{ partial "widgets/sidebar/search.html" . }}
+            {{ partial "widgets/sidebar/recent.html" . }}
+            {{ partial "widgets/sidebar/adsense.html" . }}
+            {{ partial "widgets/sidebar/tags.html" . }}
+            {{ partial "widgets/sidebar/donate.html" . }}
+            <div style="margin-bottom:100px"></div>
+          </aside>
+        </div>
+      </div>
+    </section>
+    <footer class="site-footer">
+        {{ partial "footer" }}
+    </footer>
+    {{ template "_internal/google_analytics.html" . }}
+{{ end }}
+</body>
+</html>

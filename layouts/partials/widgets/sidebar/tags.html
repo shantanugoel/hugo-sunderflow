@@ -1,0 +1,12 @@
+{{ with .Site.Taxonomies.tags }}
+<div class="row">
+  <div class="col-md-12">
+    <h4>Tags</h4>
+    <p class="tag-cloud">
+        {{ range .ByCount }}
+            <a href="{{ $.Site.BaseURL}}/tags/{{ .Name | urlize }}">{{ .Name }} ({{ .Count }})</a>
+        {{ end }}
+    </p>
+  </div>
+</div>
+{{ end }}
