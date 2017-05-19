@@ -1,92 +1,3 @@
-body {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  overflow-x: hidden; }
-
-#welcome {
-  background-color: #1F4255;
-  min-height: 500px;
-  height: 100vh; }
-
-#features-short {
-  padding: 50px 0;
-  border-bottom: 2px solid #C3D2DC; }
-  #features-short h3.heading {
-    padding: 10px 0;
-    font-size: 24px;
-    font-weight: 300;
-    color: #142D3C; }
-  #features-short .text {
-    font-weight: 100; }
-
-#friends {
-  padding: 50px 0;
-  text-align: center; }
-  #friends .heading {
-    color: #C3D2DC;
-    font-weight: bold;
-    padding: 40px 0;
-    text-transform: uppercase; }
-
-#features {
-  padding: 50px 0;
-  text-align: center;
-  background-color: #F0F5FA; }
-  #features .heading {
-    color: #C3D2DC;
-    font-weight: bold;
-    padding: 40px 0 10px 0;
-    text-transform: uppercase; }
-  #features .heading-big {
-    font-size: 3em;
-    padding: 0 0 50px 0; }
-  #features .description {
-    line-height: 1.9em;
-    text-align: left;
-    color: #142D3C; }
-
-footer {
-  padding: 50px 0 100px 0;
-  background-color: #142D3C;
-  color: #FFFFFF; }
-  footer .heading {
-    margin-bottom: 25px; }
-  footer .footer-link {
-    margin-top: 5px; }
-    footer .footer-link a {
-      color: #ccc;
-      font-weight: 100; }
-  footer .text {
-    color: #ccc;
-    font-weight: 100; }
-
-.btn-custom {
-  background-color: #FFFFFF;
-  color: #FF405E;
-  border: 1px solid #FF405E;
-  transition: 0.2s all ease;
-  padding: 10px 40px;
-  text-transform: uppercase; }
-
-.btn-custom:hover, .btn-custom:focus {
-  background-color: #FF405E;
-  color: #FFFFFF; }
-
-.btn-custom-inverse {
-  background-color: #FF405E;
-  color: #FFFFFF;
-  border: 1px solid #FF405E;
-  transition: 0.2s all ease;
-  padding: 10px 40px;
-  text-transform: uppercase; }
-
-.btn-custom-inverse:hover, .btn-custom-inverse:focus {
-  background-color: #C33750;
-  color: #FFFFFF; }
-
-.custom-hr {
-  background-color: #C3D2DC; }
-
 /* Sakura.css v1.0.0
  * ================
  * Minimal css theme.
@@ -201,6 +112,40 @@ td, th {
   border-bottom: 1px solid #f1f1f1; }
 
 /* Buttons, forms and input */
+.btn-custom {
+  background-color: #FFFFFF;
+  color: #FF405E;
+  border: 1px solid #FF405E;
+  transition: 0.2s all ease;
+  padding: 10px 40px;
+  text-transform: uppercase; }
+
+.btn-custom:hover, .btn-custom:focus {
+  background-color: #FF405E;
+  color: #FFFFFF; }
+
+.btn-custom-inverse {
+  background-color: #FF405E;
+  color: #FFFFFF;
+  border: 1px solid #FF405E;
+  transition: 0.2s all ease;
+  padding: 10px 40px;
+  text-transform: uppercase; }
+
+.btn-custom-inverse:hover, .btn-custom-inverse:focus {
+  background-color: #C33750;
+  color: #FFFFFF; }
+
+.custom-hr {
+  background-color: #C3D2DC; }
+
+.row-eq {
+  overflow: hidden; }
+
+.col-eq {
+  margin-bottom: -99999px !important;
+  padding-bottom: 99999px !important; }
+
 .site-footer {
   padding: 50px 0 100px 0;
   background-color: #142D3C;
@@ -260,19 +205,9 @@ td, th {
     text-align: left;
     color: #142D3C; }
 
-.custom-hr {
-  background-color: #C3D2DC; }
-
 .side-menu {
   background-color: #F0F5FA;
   padding: 50px 20px; }
-
-.row-eq {
-  overflow: hidden; }
-
-.col-eq {
-  margin-bottom: -99999px !important;
-  padding-bottom: 99999px !important; }
 
 .site-header .navbar {
   margin-bottom: 0px; }

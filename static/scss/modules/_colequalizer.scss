@@ -1,0 +1,10 @@
+// Hack to use flexbox like equally sized columns
+// without "actually" using flexbox
+.row-eq{
+    overflow: hidden; 
+}
+
+.col-eq {
+    margin-bottom: -99999px !important;
+    padding-bottom: 99999px !important;
+}
