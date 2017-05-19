@@ -11,6 +11,17 @@ cd /path/to/hugo/site
 git clone https://github.com/oxalorg/hugo-sunderflow themes/sunderflow
 ```
 
+Now enable the theme by changing the `theme` variable to `sunderflow`
+in your root hugo config file:
+
+```yaml
+# in /config.toml
+theme = "sunderflow"
+
+# or if you're using yaml, in /config.yaml
+theme: "sunderflow"
+```
+
 ## Notes
 
 css files are compiled and checked into version control, so there is no need for the user to mess around with node and sass.
