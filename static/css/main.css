@@ -1,0 +1,295 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  overflow-x: hidden; }
+
+#welcome {
+  background-color: #1F4255;
+  min-height: 500px;
+  height: 100vh; }
+
+#features-short {
+  padding: 50px 0;
+  border-bottom: 2px solid #C3D2DC; }
+  #features-short h3.heading {
+    padding: 10px 0;
+    font-size: 24px;
+    font-weight: 300;
+    color: #142D3C; }
+  #features-short .text {
+    font-weight: 100; }
+
+#friends {
+  padding: 50px 0;
+  text-align: center; }
+  #friends .heading {
+    color: #C3D2DC;
+    font-weight: bold;
+    padding: 40px 0;
+    text-transform: uppercase; }
+
+#features {
+  padding: 50px 0;
+  text-align: center;
+  background-color: #F0F5FA; }
+  #features .heading {
+    color: #C3D2DC;
+    font-weight: bold;
+    padding: 40px 0 10px 0;
+    text-transform: uppercase; }
+  #features .heading-big {
+    font-size: 3em;
+    padding: 0 0 50px 0; }
+  #features .description {
+    line-height: 1.9em;
+    text-align: left;
+    color: #142D3C; }
+
+footer {
+  padding: 50px 0 100px 0;
+  background-color: #142D3C;
+  color: #FFFFFF; }
+  footer .heading {
+    margin-bottom: 25px; }
+  footer .footer-link {
+    margin-top: 5px; }
+    footer .footer-link a {
+      color: #ccc;
+      font-weight: 100; }
+  footer .text {
+    color: #ccc;
+    font-weight: 100; }
+
+.btn-custom {
+  background-color: #FFFFFF;
+  color: #FF405E;
+  border: 1px solid #FF405E;
+  transition: 0.2s all ease;
+  padding: 10px 40px;
+  text-transform: uppercase; }
+
+.btn-custom:hover, .btn-custom:focus {
+  background-color: #FF405E;
+  color: #FFFFFF; }
+
+.btn-custom-inverse {
+  background-color: #FF405E;
+  color: #FFFFFF;
+  border: 1px solid #FF405E;
+  transition: 0.2s all ease;
+  padding: 10px 40px;
+  text-transform: uppercase; }
+
+.btn-custom-inverse:hover, .btn-custom-inverse:focus {
+  background-color: #C33750;
+  color: #FFFFFF; }
+
+.custom-hr {
+  background-color: #C3D2DC; }
+
+/* Sakura.css v1.0.0
+ * ================
+ * Minimal css theme.
+ * Project: https://github.com/oxalorg/sakura
+ */
+/* Body */
+html {
+  font-size: 62.5%;
+  font-family: serif; }
+
+body {
+  font-size: 1.8rem;
+  line-height: 1.618;
+  margin: auto;
+  color: #4a4a4a;
+  background-color: #f9f9f9; }
+
+@media (max-width: 684px) {
+  body {
+    font-size: 1.53rem; } }
+
+@media (max-width: 382px) {
+  body {
+    font-size: 1.35rem; } }
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.1;
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: 700;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto; }
+
+h1 {
+  font-size: 2.35em; }
+
+h2 {
+  font-size: 2.00em; }
+
+h3 {
+  font-size: 1.75em; }
+
+h4 {
+  font-size: 1.5em; }
+
+h5 {
+  font-size: 1.25em; }
+
+h6 {
+  font-size: 1em; }
+
+small, sub, sup {
+  font-size: 75%; }
+
+hr {
+  border-color: #537488; }
+
+a {
+  text-decoration: none;
+  color: #537488; }
+  a:hover {
+    color: #c74459;
+    border-bottom: 2px solid #4a4a4a; }
+
+ul {
+  padding-left: 1.4em; }
+
+li {
+  margin-bottom: 0.4em; }
+
+blockquote {
+  font-style: italic;
+  margin-left: 1.5em;
+  padding-left: 1em;
+  border-left: 3px solid #537488; }
+
+img {
+  max-width: 100%; }
+
+/* Pre and Code */
+pre {
+  background-color: #f1f1f1;
+  display: block;
+  padding: 1em;
+  overflow-x: auto; }
+
+code {
+  font-size: 0.9em;
+  padding: 0 0.5em;
+  background-color: #f1f1f1;
+  white-space: pre-wrap;
+  color: #c74459; }
+
+pre > code {
+  padding: 0;
+  background-color: transparent;
+  white-space: pre; }
+
+/* Tables */
+table {
+  text-align: justify;
+  width: 100%;
+  border-collapse: collapse; }
+
+td, th {
+  padding: 0.5em;
+  border-bottom: 1px solid #f1f1f1; }
+
+/* Buttons, forms and input */
+.site-footer {
+  padding: 50px 0 100px 0;
+  background-color: #142D3C;
+  color: #FFFFFF;
+  z-index: 999;
+  position: relative; }
+  .site-footer .heading {
+    margin-bottom: 25px; }
+  .site-footer .footer-link {
+    margin-top: 5px; }
+    .site-footer .footer-link a {
+      color: #ccc;
+      font-weight: 100; }
+  .site-footer .text {
+    color: #ccc;
+    font-weight: 100; }
+
+#welcome {
+  background-color: #1F4255;
+  min-height: 500px;
+  height: 100vh; }
+
+#features-short {
+  padding: 50px 0;
+  border-bottom: 2px solid #C3D2DC; }
+  #features-short h3.heading {
+    padding: 10px 0;
+    font-size: 24px;
+    font-weight: 300;
+    color: #142D3C; }
+  #features-short .text {
+    font-weight: 100; }
+
+#friends {
+  padding: 50px 0;
+  text-align: center; }
+  #friends .heading {
+    color: #C3D2DC;
+    font-weight: bold;
+    padding: 40px 0;
+    text-transform: uppercase; }
+
+#features {
+  padding: 50px 0;
+  text-align: center;
+  background-color: #F0F5FA; }
+  #features .heading {
+    color: #C3D2DC;
+    font-weight: bold;
+    padding: 40px 0 10px 0;
+    text-transform: uppercase; }
+  #features .heading-big {
+    font-size: 3em;
+    padding: 0 0 50px 0; }
+  #features .description {
+    line-height: 1.9em;
+    text-align: left;
+    color: #142D3C; }
+
+.custom-hr {
+  background-color: #C3D2DC; }
+
+.side-menu {
+  background-color: #F0F5FA;
+  padding: 50px 20px; }
+
+.row-eq {
+  overflow: hidden; }
+
+.col-eq {
+  margin-bottom: -99999px !important;
+  padding-bottom: 99999px !important; }
+
+.site-header .navbar {
+  margin-bottom: 0px; }
+
+a:hover {
+  text-decoration: none; }
+
+pre {
+  border: 0px;
+  border-radius: 0px; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 40px;
+  margin-bottom: 20px; }
+
+.content {
+  padding-right: 20px; }
+
+.featured-card {
+  margin-top: 10px; }

@@ -1,0 +1,14 @@
+{
+  "name": "sunderflow",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass static/scss -o static/css",
+    "scss:watch": "node-sass static/scss -o static/css -w"
+  },
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.5.3"
+  }
+}

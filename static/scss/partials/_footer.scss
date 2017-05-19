@@ -1,0 +1,23 @@
+.site-footer {
+  padding: 50px 0 100px 0;
+  background-color: $footer-bgcolor;
+  color: $white;
+  z-index: 999;
+  position: relative;
+  
+  .heading {
+    margin-bottom: 25px;
+  }
+  .footer-link {
+    margin-top: 5px;
+
+    a {
+      color: #ccc;
+      font-weight: 100;
+    }
+  }
+  .text {
+    color: #ccc;
+    font-weight: 100;
+  }
+}

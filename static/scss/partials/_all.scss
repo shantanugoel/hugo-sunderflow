@@ -1,0 +1,121 @@
+$font-stack: 'Roboto', sans-serif;
+$font-md: 24px;
+$welcome-bgcolor: #1F4255;
+$footer-bgcolor: #142D3C;
+$red: #FF405E;
+$white: #FFFFFF;
+
+body {
+  font-family: $font-stack;
+  font-weight: 300;
+  overflow-x: hidden;
+}
+
+#welcome {
+  background-color: $welcome-bgcolor;
+  min-height: 500px;
+  height: 100vh;
+}
+
+#features-short {
+  padding: 50px 0;
+  border-bottom: 2px solid #C3D2DC;
+  h3.heading {
+    padding: 10px 0;
+    font-size: $font-md;
+    font-weight: 300;
+    color: #142D3C;
+  }
+
+  .text {
+    font-weight: 100;
+  }
+}
+
+#friends {
+  padding: 50px 0;
+  text-align: center;
+  .heading {
+    color: #C3D2DC;
+    font-weight: bold;
+    padding: 40px 0;
+    text-transform: uppercase;
+  }
+}
+
+#features {
+  padding: 50px 0;
+  text-align: center;
+  background-color: #F0F5FA;
+
+  .heading {
+    color: #C3D2DC;
+    font-weight: bold;
+    padding: 40px 0 10px 0;
+    text-transform: uppercase;
+  }
+  .heading-big {
+    font-size: 3em;
+    padding: 0 0 50px 0;
+  }
+  .description {
+    line-height: 1.9em;
+    text-align: left;
+    color: #142D3C;
+  }
+}
+
+footer {
+  padding: 50px 0 100px 0;
+  background-color: $footer-bgcolor;
+  color: $white;
+  
+  .heading {
+    margin-bottom: 25px;
+  }
+  .footer-link {
+    margin-top: 5px;
+
+    a {
+      color: #ccc;
+      font-weight: 100;
+    }
+  }
+  .text {
+    color: #ccc;
+    font-weight: 100;
+  }
+}
+
+.btn-custom {
+  background-color: $white;
+  color: $red;
+  border: 1px solid $red;
+  transition: 0.2s all ease;
+  padding: 10px 40px;
+  text-transform: uppercase;
+}
+
+.btn-custom:hover, .btn-custom:focus {
+  background-color: $red;
+  color: $white;
+}
+
+.btn-custom-inverse {
+  background-color: $red;
+  color: $white;
+  border: 1px solid $red;
+  transition: 0.2s all ease;
+  padding: 10px 40px;
+  text-transform: uppercase;
+}
+
+.btn-custom-inverse:hover, .btn-custom-inverse:focus {
+  background-color: #C33750;
+  color: $white;
+}
+
+
+.custom-hr  {
+  background-color: #C3D2DC;
+}

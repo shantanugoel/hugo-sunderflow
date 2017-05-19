@@ -1,0 +1,27 @@
+.btn-custom {
+  background-color: $white;
+  color: $red;
+  border: 1px solid $red;
+  transition: 0.2s all ease;
+  padding: 10px 40px;
+  text-transform: uppercase;
+}
+
+.btn-custom:hover, .btn-custom:focus {
+  background-color: $red;
+  color: $white;
+}
+
+.btn-custom-inverse {
+  background-color: $red;
+  color: $white;
+  border: 1px solid $red;
+  transition: 0.2s all ease;
+  padding: 10px 40px;
+  text-transform: uppercase;
+}
+
+.btn-custom-inverse:hover, .btn-custom-inverse:focus {
+  background-color: #C33750;
+  color: $white;
+}

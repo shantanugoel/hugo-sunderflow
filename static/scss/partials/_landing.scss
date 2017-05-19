@@ -1,0 +1,57 @@
+#welcome {
+  background-color: $welcome-bgcolor;
+  min-height: 500px;
+  height: 100vh;
+}
+
+#features-short {
+  padding: 50px 0;
+  border-bottom: 2px solid #C3D2DC;
+  h3.heading {
+    padding: 10px 0;
+    font-size: $font-md;
+    font-weight: 300;
+    color: #142D3C;
+  }
+
+  .text {
+    font-weight: 100;
+  }
+}
+
+#friends {
+  padding: 50px 0;
+  text-align: center;
+  .heading {
+    color: #C3D2DC;
+    font-weight: bold;
+    padding: 40px 0;
+    text-transform: uppercase;
+  }
+}
+
+#features {
+  padding: 50px 0;
+  text-align: center;
+  background-color: #F0F5FA;
+
+  .heading {
+    color: #C3D2DC;
+    font-weight: bold;
+    padding: 40px 0 10px 0;
+    text-transform: uppercase;
+  }
+  .heading-big {
+    font-size: 3em;
+    padding: 0 0 50px 0;
+  }
+  .description {
+    line-height: 1.9em;
+    text-align: left;
+    color: #142D3C;
+  }
+}
+
+.custom-hr  {
+  background-color: #C3D2DC;
+}
