@@ -1,27 +1,43 @@
-.btn-custom {
+@mixin btnCustom ($bgcolor) {
   background-color: $white;
-  color: $red;
-  border: 1px solid $red;
+  color: $bgcolor;
+  border: 1px solid $bgcolor;
   transition: 0.2s all ease;
   padding: 10px 40px;
   text-transform: uppercase;
+
+  :hover, :focus {
+    background-color: $bgcolor;
+    color: $white;
+  }
 }
 
-.btn-custom:hover, .btn-custom:focus {
-  background-color: $red;
-  color: $white;
-}
 
-.btn-custom-inverse {
-  background-color: $red;
+@mixin btnCustomInverse ($bgcolor) {
+  background-color: $bgcolor;
   color: $white;
-  border: 1px solid $red;
+  border: 1px solid $bgcolor;
   transition: 0.2s all ease;
   padding: 10px 40px;
   text-transform: uppercase;
+  :hover, :focus {
+    background-color: $white;
+    color: $bgcolor;
+  }
 }
 
-.btn-custom-inverse:hover, .btn-custom-inverse:focus {
-  background-color: #C33750;
-  color: $white;
+.btn-red {
+  @include btnCustom($red);
+}
+
+.btn-red-inverse {
+  @include btnCustom($red);
+}
+
+.btn-blue {
+  @include btnCustom($blue);
+}
+
+.btn-blue-inverse {
+  @include btnCustom($blue);
 }
