@@ -1,7 +1,4 @@
 <div class="container">
-    <!--<div class="row">
-        {{ partial "widgets/footer/links.html" . }} {{ partial "widgets/footer/social.html" . }}
-    </div>-->
     <div class="row">
         <div class="col-md-6">
             <div class="row">
@@ -50,11 +47,31 @@
                     <div class="text">
                         Leave your email for the latest news: We won’t spam you and won’t go off topic.
                     </div>
-                    <div class="input-group" style="margin-top: 20px;">
+                    <div class="input-group gutter-top-md">
                         <input type="text" placeholder="Email" class="form-control">
                         <span class="input-group-btn">
-                      <button class="btn" style="padding: 6px 20px; background: #FF405E;" type ="button">&#9993;</button>
+                      <button class="btn bg-red" id="envelope-btn" type ="button">
+                        <i class="fa fa-envelope"></i>
+                      </button>
                    </span>
+                    </div>
+                    <div class="gutter-top-md contact-container">
+                        Join us on:
+                        <a href="#" class="gutter-left-sm">
+                    <i class="fa fa-twitter fa-2x"></i>
+                  </a>
+                        <a href="#" class="gutter-left-sm">
+                    <i class="fa fa-linkedin fa-2x"></i>
+                  </a>
+                        <a href="#" class="gutter-left-sm">
+                    <i class="fa fa-reddit fa-2x"></i>
+                  </a>
+                        <a href="#" class="gutter-left-sm">
+                    <i class="fa fa-facebook fa-2x"></i>
+                  </a>
+                        <a href="#" class="gutter-left-sm">
+                    <i class="fa fa-slack fa-2x"></i>
+                  </a>
                     </div>
                 </div>
             </div>

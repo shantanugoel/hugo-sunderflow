@@ -1,6 +1,59 @@
  {{ define "body" }}
-<section id="welcome">
+<nav class="navbar navbar-default navbar-fixed-top navbar-dark ">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+            <a class="navbar-brand" href="#">Security Underflow</a>
+            <ul class="nav navbar-nav navbar-right visible-xs pull-right navbar-sm">
+                <li><a href="#" id="search-toggle-phone"><i class="fa fa-search nav-search-icon"></i></a></li>
+            </ul>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Why SecurityUnderflow</a></li>
+                <li class="hidden-xs hidden-sm"><a href="#">Resources</a></li>
+                <li class="hidden-xs hidden-sm"><a href="#">Documentation</a></li>
+                <li><a href="#">Blog</a></li>
+                <li class="nav-github hidden-xs"><a href="#"><i class="fa fa-github"></i></a></li>
+                <li class="hidden-xs"><a href="#" id="search-toggle"><i class="fa fa-search nav-search-icon"></i></a></li>
+            </ul>
+        </div>
+    </div>
 
+    <div id="search-container" class="search-hidden">
+        <div class="bg-red pull-left" id="input-search-icon-container">
+            <i class="fa fa-search" id="input-search-icon"></i>
+        </div>
+        <input type="text" class="form-control pull-left" id="input-search">
+        <div class="pull-left" id="input-close-icon-container">
+            <i class="fa fa-times" id="input-close-icon"></i>
+        </div>
+    </div>
+</nav>
+
+<section id="welcome">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h3 class="text-uppercase heading">Security Underflow</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h4 class="text-uppercase sub-heading">Cool catchphrase about how this is the coolest thing ever</h4>
+        </div>
+    </div>
+    <div class="row gutter-top-lg">
+        <div class="col-sm-12 text-center">
+            <button class="btn btn-red-inverse">Cool button</button>
+            <div class="gutter-top-md visible-xs"></div>
+            <div class="gutter-left-md hidden-xs inline-block"></div>
+            <button class="btn btn-blue-inverse">Cool button</button>
+        </div>
+    </div>
 </section>
 
 <section id="features-short">
@@ -17,6 +70,10 @@
                     cumque deserunt.
                 </div>
             </div>
+
+            <div class="gutter-top-lg visible-xs visible-sm"></div>
+            <div class="gutter-top-lg visible-xs visible-sm"></div>
+
             <div class="col-md-4">
                 <a href="#">
               <img src="http://pmaadvantage.com/wp-content/uploads/2013/09/Icon-Placeholder.png" height="200">
@@ -27,6 +84,10 @@
                     est earum.
                 </div>
             </div>
+
+            <div class="gutter-top-lg visible-xs visible-sm"></div>
+            <div class="gutter-top-lg visible-xs visible-sm"></div>
+
             <div class="col-md-4">
                 <a href="#">
               <img src="http://pmaadvantage.com/wp-content/uploads/2013/09/Icon-Placeholder.png" height="200">
@@ -38,10 +99,10 @@
                 </div>
             </div>
         </div>
-
-        <div class="row text-center" style="margin-top: 30px;">
+        <div class="gutter-top-lg"></div>
+        <div class="row text-center">
             <div class="col-md-12">
-                <button class="btn btn-custom">Learn more</button>
+                <button class="btn btn-red">Learn more</button>
             </div>
         </div>
     </div>
@@ -72,57 +133,77 @@
     <div class="heading-big">
         What more do we offer
     </div>
+    <div class="gutter-top-lg"></div>
     <div class="container">
         <div class="row">
             <div class="col-md-4">
-                <div class="col-sm-3">
-                    <img src="https://placehold.it/64x64" alt="">
-                </div>
-                <div class="col-sm-9 description">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, magni?
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="col-sm-3">
-                    <img src="https://placehold.it/64x64" alt="">
-                </div>
-                <div class="col-sm-9 description">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                <div class="row">
+                    <div class="col-sm-3 col-xs-4">
+                        <img src="https://placehold.it/64x64" alt="">
+                    </div>
+                    <div class="col-sm-9 col-xs-8 description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, magni?
+                    </div>
                 </div>
             </div>
+            <div class="gutter-top-lg hidden-md hidden-lg"></div>
             <div class="col-md-4">
-                <div class="col-sm-3">
-                    <img src="https://placehold.it/64x64" alt="">
+                <div class="row">
+                    <div class="col-sm-3 col-xs-4">
+                        <img src="https://placehold.it/64x64" alt="">
+                    </div>
+                    <div class="col-sm-9 col-xs-8 description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </div>
                 </div>
-                <div class="col-sm-9 description">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus dolore, et! Suscipit!
+            </div>
+            <div class="gutter-top-lg hidden-md hidden-lg"></div>
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-sm-3 col-xs-4">
+                        <img src="https://placehold.it/64x64" alt="">
+                    </div>
+                    <div class="col-sm-9 col-xs-8 description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus dolore, et! Suscipit!
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="row" style="margin-top: 50px;">
+        <div class="gutter-top-lg hidden-xs hidden-sm"></div>
+        <div class="gutter-top-lg"></div>
+
+        <div class="row">
             <div class="col-md-4">
-                <div class="col-sm-3">
-                    <img src="https://placehold.it/64x64" alt="">
-                </div>
-                <div class="col-sm-9 description">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, magni?
+                <div class="row">
+                    <div class="col-sm-3 col-xs-4">
+                        <img src="https://placehold.it/64x64" alt="">
+                    </div>
+                    <div class="col-sm-9 col-xs-8 description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, magni?
+                    </div>
                 </div>
             </div>
+            <div class="gutter-top-lg hidden-md hidden-lg"></div>
             <div class="col-md-4">
-                <div class="col-sm-3">
-                    <img src="https://placehold.it/64x64" alt="">
-                </div>
-                <div class="col-sm-9 description">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                <div class="row">
+                    <div class="col-sm-3 col-xs-4">
+                        <img src="https://placehold.it/64x64" alt="">
+                    </div>
+                    <div class="col-sm-9 col-xs-8 description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </div>
                 </div>
             </div>
+            <div class="gutter-top-lg hidden-md hidden-lg"></div>
             <div class="col-md-4">
-                <div class="col-sm-3">
-                    <img src="https://placehold.it/64x64" alt="">
-                </div>
-                <div class="col-sm-9 description">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus dolore, et! Suscipit!
+                <div class="row">
+                    <div class="col-sm-3 col-xs-4">
+                        <img src="https://placehold.it/64x64" alt="">
+                    </div>
+                    <div class="col-sm-9 col-xs-8 description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus dolore, et! Suscipit!
+                    </div>
                 </div>
             </div>
         </div>
@@ -133,68 +214,84 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4">
-                <div class="col-sm-2">
-                    <img src="https://placehold.it/28x28" alt="">
-                </div>
-                <div class="col-sm-10 description">
-                    Lorem ipsum dolor sit amet, consectetur.
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="col-sm-2">
-                    <img src="https://placehold.it/28x28" alt="">
-                </div>
-                <div class="col-sm-10 description">
-                    Lorem ipsum dolor sit amet, consectetur.
+                <div class="row">
+                    <div class="col-xs-2">
+                        <img src="https://placehold.it/28x28" alt="">
+                    </div>
+                    <div class="col-xs-10 description">
+                        Lorem ipsum dolor sit amet, consectetur.
+                    </div>
                 </div>
             </div>
+            <div class="gutter-top-lg hidden-md hidden-lg"></div>
             <div class="col-md-4">
-                <div class="col-sm-2">
-                    <img src="https://placehold.it/28x28" alt="">
+                <div class="row">
+                    <div class="col-xs-2">
+                        <img src="https://placehold.it/28x28" alt="">
+                    </div>
+                    <div class="col-xs-10 description">
+                        Lorem ipsum dolor sit amet, consectetur.
+                    </div>
                 </div>
-                <div class="col-sm-10 description">
-                    Lorem ipsum dolor sit amet, consectetur.
+            </div>
+            <div class="gutter-top-lg hidden-md hidden-lg"></div>
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-xs-2">
+                        <img src="https://placehold.it/28x28" alt="">
+                    </div>
+                    <div class="col-xs-10 description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus!
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="row" style="margin-top: 50px;">
+        <div class="gutter-top-lg"></div>
+
+        <div class="row">
             <div class="col-md-4">
-                <div class="col-sm-2">
-                    <img src="https://placehold.it/28x28" alt="">
-                </div>
-                <div class="col-sm-10 description">
-                    Lorem ipsum dolor sit amet, consectetur.
+                <div class="row">
+                    <div class="col-xs-2">
+                        <img src="https://placehold.it/28x28" alt="">
+                    </div>
+                    <div class="col-xs-10 description">
+                        Lorem ipsum dolor sit amet, consectetur.
+                    </div>
                 </div>
             </div>
+            <div class="gutter-top-lg hidden-md hidden-lg"></div>
             <div class="col-md-4">
-                <div class="col-sm-2">
-                    <img src="https://placehold.it/28x28" alt="">
-                </div>
-                <div class="col-sm-10 description">
-                    Lorem ipsum dolor sit amet.
+                <div class="row">
+                    <div class="col-xs-2">
+                        <img src="https://placehold.it/28x28" alt="">
+                    </div>
+                    <div class="col-xs-10 description">
+                        Lorem ipsum dolor sit amet, consectetur.
+                    </div>
                 </div>
             </div>
+            <div class="gutter-top-lg hidden-md hidden-lg"></div>
             <div class="col-md-4">
-                <div class="col-sm-2">
-                    <img src="https://placehold.it/28x28" alt="">
-                </div>
-                <div class="col-sm-10 description">
-                    Lorem ipsum dolor sit amet, consectetur.
+                <div class="row">
+                    <div class="col-xs-2">
+                        <img src="https://placehold.it/28x28" alt="">
+                    </div>
+                    <div class="col-xs-10 description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus!
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="row text-center" style="margin-top: 30px;">
+    <div class="row text-center gutter-top-lg">
         <div class="col-md-12">
-            <button class="btn btn-custom-inverse">Learn more</button>
+            <button class="btn btn-red-inverse">Learn more</button>
         </div>
     </div>
 </section>
-    
+
 <footer class="site-footer">
     {{ partial "footer" }}
 </footer>
-{{ template "_internal/google_analytics.html" . }}
-
-{{ end }}
+{{ template "_internal/google_analytics.html" . }} {{ end }}
