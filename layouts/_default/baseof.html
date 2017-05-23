@@ -40,7 +40,7 @@
 <body>
 {{ block "body" . }}
     <header class="site-header">
-        {{ partial "navbar" . }}
+        {{ partial "navbar" (dict "navbarType" "navbar-static-top") }}
     </header>
     <section class="site-main container">
       <div class="row row-eq">

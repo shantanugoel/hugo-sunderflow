@@ -1,31 +1,35 @@
-<!-- Navigation -->
-<nav class="navbar navbar-default topnav" role="navigation">
-    <div class="container topnav">
-        <!-- Brand and toggle get grouped for better mobile display -->
+<nav class="navbar navbar-default {{ .navbarType }} navbar-dark ">
+    <div class="container-fluid">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            <a class="navbar-brand topnav" href="/">Security Underflow</a>
-        </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a href="/blog">Blog</a>
-                </li>
-                <li>
-                    <a href="#services">About</a>
-                </li>
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+            <a class="navbar-brand" href="#">Security Underflow</a>
+            <ul class="nav navbar-nav navbar-right visible-xs pull-right navbar-sm">
+                <li><a href="#" id="search-toggle-phone"><i class="fa fa-search nav-search-icon"></i></a></li>
             </ul>
         </div>
-        <!-- /.navbar-collapse -->
+        <div class="collapse navbar-collapse" id="navbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Why SecurityUnderflow</a></li>
+                <li class="hidden-xs hidden-sm"><a href="#">Resources</a></li>
+                <li class="hidden-xs hidden-sm"><a href="#">Documentation</a></li>
+                <li><a href="#">Blog</a></li>
+                <li class="nav-github hidden-xs"><a href="#"><i class="fa fa-github"></i></a></li>
+                <li class="hidden-xs"><a href="#" id="search-toggle"><i class="fa fa-search nav-search-icon"></i></a></li>
+            </ul>
+        </div>
     </div>
-    <!-- /.container -->
+
+    <div id="search-container" class="search-hidden">
+        <div class="bg-red pull-left" id="input-search-icon-container">
+            <i class="fa fa-search" id="input-search-icon"></i>
+        </div>
+        <input type="text" class="form-control pull-left" id="input-search">
+        <div class="pull-left" id="input-close-icon-container">
+            <i class="fa fa-times" id="input-close-icon"></i>
+        </div>
+    </div>
 </nav>
