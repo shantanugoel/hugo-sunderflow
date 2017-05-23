@@ -1,0 +1,135 @@
+nav {
+  box-shadow: 0 4px 2px -2px rgba(20, 45, 60, 0.25);
+}
+
+.navbar-white {
+  background-color: $white;
+  .navbar-brand, .nav.navbar-nav.navbar-right li a {
+    color: $navbar-font-color;
+  }
+  border-color: none;
+}
+
+.search-visible {
+  left: 0;
+}
+.search-hidden {
+  left: 150%;
+}
+
+.navbar-sm {
+  margin-right: 15px;
+}
+
+#search-container {
+  position: absolute; 
+  height: 100%; 
+  width: 100%; 
+  top:0;
+  transition: .3s left ease;
+
+  #input-search-icon-container {
+    height: 100%;
+    display: table;
+
+    #input-search-icon {
+      font-size: 1.8em;
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+    }
+  }
+
+  #input-close-icon-container {
+    height: 100%;
+    display: table;
+    background: $cream;
+    color: $navbar-font-color;
+    #input-close-icon {
+      font-size: 1.5em;
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+      cursor: pointer;
+    }
+  }
+
+  #input-search {
+    background: $cream;
+    height: 100%;
+    width: calc(100% - 160px);
+    border-radius: 0;
+    border: none;
+    font-size: 1.3em;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    min-height: 80px;
+    transition: .5s all ease;
+    box-sizing: border-box;
+  }
+
+  .navbar-dark {
+    background-image: none !important;
+    background-color: transparent !important;
+    border-bottom: 1px solid #304D5D !important;
+  }
+
+  .navbar-right > li > a {
+    line-height: 80px;
+    display: inline;
+  }
+
+  .navbar-brand, .navbar-right > li {
+    padding: 0 15px;
+    height: 80px;
+    line-height: 80px;
+  }
+
+  .navbar-dark .navbar-brand, .nav.navbar-nav.navbar-right li a {
+    color: $cream;
+  }
+
+  .nav-github {
+    padding-top: 5px !important;
+    a > i {
+      font-size: 2.3em;
+    }
+  }
+
+  .nav-search-icon {
+    font-size: 1.8em;
+  }
+}
+
+.fa-lg {
+  font-size: 1.33333333em;
+  line-height: 0.75em;
+  vertical-align: -15%;
+}
+
+.bg-red {
+  background-color: $red;
+  color: $white;
+}
+
+.gutter-top-lg {
+  margin-top: 30px;
+  min-height: 1px;
+  box-sizing: border-box;
+}
+
+.gutter-top-md {
+  @extend .gutter-top-lg;
+  margin-top: 20px;
+}
+
+.gutter-left-md {
+  margin-left: 20px;
+}
+
+.gutter-left-sm {
+  margin-left: 10px;
+}

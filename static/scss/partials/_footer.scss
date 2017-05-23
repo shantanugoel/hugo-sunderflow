@@ -1,10 +1,9 @@
 .site-footer {
+  font-family: $robot;
   padding: 50px 0 100px 0;
   background-color: $footer-bgcolor;
   color: $white;
-  z-index: 999;
-  position: relative;
-  
+
   .heading {
     margin-bottom: 25px;
   }
@@ -19,5 +18,16 @@
   .text {
     color: #ccc;
     font-weight: 100;
+  }
+
+  #envelope-btn {
+    padding: 9px 20px;
+  }
+
+  .contact-container {
+    a, a:hover, a:focus {
+      text-decoration: none;
+      color: $white;
+    }
   }
 }

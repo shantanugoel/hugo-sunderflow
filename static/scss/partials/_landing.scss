@@ -2,6 +2,27 @@
   background-color: $welcome-bgcolor;
   min-height: 500px;
   height: 100vh;
+  padding-top: 100px;
+  color: $cream;
+  .heading {
+    font-size: 5em;
+    font-weight: 100;
+  }
+  .sub-heading {
+    font-size: 2em; 
+    font-weight: 100;
+    margin: 0 20px;
+    line-height: 1.8em;
+  }
+
+  @media (max-width: 768px) {
+    .heading{
+      font-size: 2.5em;
+    }    
+    .sub-heading {
+      font-size: 1em;
+    }
+  }
 }
 
 #features-short {
