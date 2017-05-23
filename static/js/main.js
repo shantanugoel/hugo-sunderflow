@@ -33,3 +33,48 @@
 //         $('#side-menu').css('height', offsetTop);
 //     });
 // })
+
+function resizeSearch() {
+  var searchIconHeight = $('#input-search-icon-container').height();
+  $('#input-search-icon-container, #input-close-icon-container').css({
+    'width': searchIconHeight + 'px'
+  });
+  $('#input-search').css('width', 'calc(100% - ' + (searchIconHeight * 2) + 'px)');
+}
+function toggleSearchInput(e) {
+  e.preventDefault();
+  var searchContainer = $('#search-container');
+  if(searchContainer.hasClass('search-hidden')) {
+    searchContainer.removeClass('search-hidden');
+    searchContainer.addClass('search-visible');
+  }
+  else {
+    searchContainer.removeClass('search-visible');
+    searchContainer.addClass('search-hidden');
+  }
+}
+function switchNavbar() {
+  if($(document).scrollTop() !== 0) {
+    $('.navbar-default').addClass('navbar-white');
+    $('.navbar-default').removeClass('navbar-dark');
+  }
+  else {
+    $('.navbar-default').removeClass('navbar-white');
+    $('.navbar-default').addClass('navbar-dark');
+  }
+}
+function doGoogleSearch(e) {
+  if(e.which !== 13) return;
+  var searchText = $('#input-search').val();
+  if(!searchText) return;
+  var preparedUrl = 'https://google.com'; // change stuff here
+  window.location.href = preparedUrl;
+}
+
+$(document).ready(function() {
+  resizeSearch();
+  $(window).resize(resizeSearch);
+  $(document).scroll(switchNavbar);
+  $('#search-toggle, #search-toggle-phone, #input-close-icon').click(toggleSearchInput);
+  $('#input-search').keypress(doGoogleSearch);
+});
