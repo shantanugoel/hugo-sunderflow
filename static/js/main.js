@@ -55,13 +55,13 @@ function toggleSearchInput(e) {
 }
 function switchNavbar() {
   if($(document).scrollTop() !== 0) {
-    $('.navbar-default').addClass('navbar-white');
-    $('.navbar-default').removeClass('navbar-dark');
+    $('#home-navbar').addClass('navbar-white');
+    $('#home-navbar').removeClass('navbar-dark');
   }
   else {
-    $('.navbar-default').removeClass('navbar-white');
-    $('.navbar-default').addClass('navbar-dark');
-  }
+    $('#home-navbar').removeClass('navbar-white');
+    $('#home-navbar').addClass('navbar-dark');
+  }gst
 }
 function doGoogleSearch(e) {
   if(e.which !== 13) return;
