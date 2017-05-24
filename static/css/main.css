@@ -70,8 +70,6 @@
   .site-footer .text {
     color: #ccc;
     font-weight: 100; }
-  .site-footer #envelope-btn {
-    padding: 9px 20px; }
   .site-footer .contact-container a, .site-footer .contact-container a:hover, .site-footer .contact-container a:focus {
     text-decoration: none;
     color: #FFFFFF; }
@@ -143,6 +141,13 @@
 
 .site-header .navbar {
   margin-bottom: 0px; }
+
+#nav-body-padding {
+  padding-top: 60px; }
+
+@media (min-width: 768px) {
+  #nav-body-padding {
+    padding-top: 100px; } }
 
 a:hover {
   text-decoration: none; }

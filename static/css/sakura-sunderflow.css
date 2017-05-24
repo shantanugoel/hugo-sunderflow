@@ -1,114 +1,99 @@
-/* Sakura.css v1.0.0
+.content, .side-menu {
+  /* Sakura.css v1.0.0
  * ================
  * Minimal css theme.
  * Project: https://github.com/oxalorg/sakura
  */
-/* Body */
-html {
+  /* Body */
+  /* Pre and Code */
+  /* Tables */
+  /* Buttons, forms and input */
+  /* Overwrite body and html tags to root */
   font-size: 62.5%;
-  font-family: serif; }
-
-body {
   font-size: 1.8rem;
   line-height: 1.618;
   margin: auto;
   color: #4a4a4a;
   background-color: #f9f9f9; }
-
-@media (max-width: 684px) {
-  body {
-    font-size: 1.53rem; } }
-
-@media (max-width: 382px) {
-  body {
-    font-size: 1.35rem; } }
-
-h1, h2, h3, h4, h5, h6 {
-  line-height: 1.1;
-  font-family: Verdana, Geneva, sans-serif;
-  font-weight: 700;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-  -ms-word-break: break-all;
-  word-break: break-word;
-  -ms-hyphens: auto;
-  -moz-hyphens: auto;
-  -webkit-hyphens: auto;
-  hyphens: auto; }
-
-h1 {
-  font-size: 2.35em; }
-
-h2 {
-  font-size: 2.00em; }
-
-h3 {
-  font-size: 1.75em; }
-
-h4 {
-  font-size: 1.5em; }
-
-h5 {
-  font-size: 1.25em; }
-
-h6 {
-  font-size: 1em; }
-
-small, sub, sup {
-  font-size: 75%; }
-
-hr {
-  border-color: #537488; }
-
-a {
-  text-decoration: none;
-  color: #537488; }
-  a:hover {
-    color: #c74459;
-    border-bottom: 2px solid #4a4a4a; }
-
-ul {
-  padding-left: 1.4em; }
-
-li {
-  margin-bottom: 0.4em; }
-
-blockquote {
-  font-style: italic;
-  margin-left: 1.5em;
-  padding-left: 1em;
-  border-left: 3px solid #537488; }
-
-img {
-  max-width: 100%; }
-
-/* Pre and Code */
-pre {
-  background-color: #f1f1f1;
-  display: block;
-  padding: 1em;
-  overflow-x: auto; }
-
-code {
-  font-size: 0.9em;
-  padding: 0 0.5em;
-  background-color: #f1f1f1;
-  white-space: pre-wrap;
-  color: #c74459; }
-
-pre > code {
-  padding: 0;
-  background-color: transparent;
-  white-space: pre; }
-
-/* Tables */
-table {
-  text-align: justify;
-  width: 100%;
-  border-collapse: collapse; }
-
-td, th {
-  padding: 0.5em;
-  border-bottom: 1px solid #f1f1f1; }
-
-/* Buttons, forms and input */
+  .content html, .side-menu html {
+    font-size: 62.5%;
+    font-family: serif; }
+  .content body, .side-menu body {
+    font-size: 1.8rem;
+    line-height: 1.618;
+    margin: auto;
+    color: #4a4a4a;
+    background-color: #f9f9f9; }
+  @media (max-width: 684px) {
+    .content body, .side-menu body {
+      font-size: 1.53rem; } }
+  @media (max-width: 382px) {
+    .content body, .side-menu body {
+      font-size: 1.35rem; } }
+  .content h1, .content h2, .content h3, .content h4, .content h5, .content h6, .side-menu h1, .side-menu h2, .side-menu h3, .side-menu h4, .side-menu h5, .side-menu h6 {
+    line-height: 1.1;
+    font-family: Verdana, Geneva, sans-serif;
+    font-weight: 700;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -ms-word-break: break-all;
+    word-break: break-word;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto; }
+  .content h1, .side-menu h1 {
+    font-size: 2.35em; }
+  .content h2, .side-menu h2 {
+    font-size: 2.00em; }
+  .content h3, .side-menu h3 {
+    font-size: 1.75em; }
+  .content h4, .side-menu h4 {
+    font-size: 1.5em; }
+  .content h5, .side-menu h5 {
+    font-size: 1.25em; }
+  .content h6, .side-menu h6 {
+    font-size: 1em; }
+  .content small, .content sub, .content sup, .side-menu small, .side-menu sub, .side-menu sup {
+    font-size: 75%; }
+  .content hr, .side-menu hr {
+    border-color: #537488; }
+  .content a, .side-menu a {
+    text-decoration: none;
+    color: #537488; }
+    .content a:hover, .side-menu a:hover {
+      color: #c74459;
+      border-bottom: 2px solid #4a4a4a; }
+  .content ul, .side-menu ul {
+    padding-left: 1.4em; }
+  .content li, .side-menu li {
+    margin-bottom: 0.4em; }
+  .content blockquote, .side-menu blockquote {
+    font-style: italic;
+    margin-left: 1.5em;
+    padding-left: 1em;
+    border-left: 3px solid #537488; }
+  .content img, .side-menu img {
+    max-width: 100%; }
+  .content pre, .side-menu pre {
+    background-color: #f1f1f1;
+    display: block;
+    padding: 1em;
+    overflow-x: auto; }
+  .content code, .side-menu code {
+    font-size: 0.9em;
+    padding: 0 0.5em;
+    background-color: #f1f1f1;
+    white-space: pre-wrap;
+    color: #c74459; }
+  .content pre > code, .side-menu pre > code {
+    padding: 0;
+    background-color: transparent;
+    white-space: pre; }
+  .content table, .side-menu table {
+    text-align: justify;
+    width: 100%;
+    border-collapse: collapse; }
+  .content td, .content th, .side-menu td, .side-menu th {
+    padding: 0.5em;
+    border-bottom: 1px solid #f1f1f1; }
