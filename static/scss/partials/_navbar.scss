@@ -2,6 +2,10 @@ nav {
   box-shadow: 0 4px 2px -2px rgba(20, 45, 60, 0.25);
 }
 
+.navbar {
+  font-family: $roboto;
+}
+
 .navbar-white {
   background-color: $white;
   .navbar-brand, .nav.navbar-nav.navbar-right li a {
