@@ -47,6 +47,8 @@
     <section class="site-main container">
       <div class="row row-eq">
         <div class="content col-md-9 col-eq">
+            <!--Padding is done using a custom element to preserve content styles-->
+            <div id="nav-body-padding"></div>
             {{ block "content" . }}
             {{ end }}
         </div>
