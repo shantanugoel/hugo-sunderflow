@@ -23,6 +23,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
     <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="/js/jquery.bootstrap-autohidingnavbar.js"></script>
+    
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     {{ if not .IsHome }}
@@ -40,7 +42,7 @@
 <body>
 {{ block "body" . }}
     <header class="site-header">
-        {{ partial "navbar" (dict "navbarType" "navbar-static-top") }}
+        {{ partial "navbar" (dict "navbarId" "") }}
     </header>
     <section class="site-main container">
       <div class="row row-eq">

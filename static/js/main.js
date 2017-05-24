@@ -61,7 +61,7 @@ function switchNavbar() {
   else {
     $('#home-navbar').removeClass('navbar-white');
     $('#home-navbar').addClass('navbar-dark');
-  }gst
+  }
 }
 function doGoogleSearch(e) {
   if(e.which !== 13) return;
@@ -77,4 +77,6 @@ $(document).ready(function() {
   $(document).scroll(switchNavbar);
   $('#search-toggle, #search-toggle-phone, #input-close-icon').click(toggleSearchInput);
   $('#input-search').keypress(doGoogleSearch);
+  $(".navbar-fixed-top").autoHidingNavbar({});
+  console.log('done')
 });
