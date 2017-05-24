@@ -77,6 +77,9 @@ $(document).ready(function() {
   $(document).scroll(switchNavbar);
   $('#search-toggle, #search-toggle-phone, #input-close-icon').click(toggleSearchInput);
   $('#input-search').keypress(doGoogleSearch);
-  $(".navbar-fixed-top").autoHidingNavbar({});
-  console.log('done')
+  
+  if (document.location.pathname !== '/') {
+    // Don't activate autohiding of bar on the landing page
+    $(".navbar-fixed-top").autoHidingNavbar({});
+  }
 });
