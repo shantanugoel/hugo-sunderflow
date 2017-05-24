@@ -47,17 +47,16 @@
     <section class="site-main container">
       <div class="row row-eq">
         <div class="content col-md-9 col-eq">
-            <!--Padding is done using a custom element to preserve content styles-->
-            <div id="nav-body-padding"></div>
             {{ block "content" . }}
             {{ end }}
         </div>
         <div class="col-md-3 col-eq side-menu">
-          <aside  id="side-menu">
+          <aside id="side-menu">
             {{ partial "widgets/sidebar/recent.html" . }}
             {{ partial "widgets/sidebar/adsense.html" . }}
             {{ partial "widgets/sidebar/tags.html" . }}
             {{ partial "widgets/sidebar/donate.html" . }}
+            <!-- This 100px margin is to keep some space between sidemenu and footer-->
             <div style="margin-bottom:100px"></div>
           </aside>
         </div>

@@ -2,27 +2,23 @@
     margin-bottom: 0px;
 }
 
-#nav-body-padding {
+.side-menu {
+    background-color: #F0F5FA;
+    padding: 50px 20px;
+    h1, h2, h3, h4, h5, h6 {
+        margin-top: 0px;
+    }
+    .row {
+        margin-bottom: 20px;
+    }
+}
+
+.content, .side-menu {
     padding-top: 60px;
 }
 
 @media (min-width: 768px) {
-    #nav-body-padding {
+    .content, .side-menu {
         padding-top: 100px;
     }
 }
-
-// $navbar-color: #142d3c;
-// $navbar-color-alt: #f0f5fa;
-
-// .navbar-default {
-//     background-color: $navbar-color;
-//     border-color: $navbar-color-alt;
-// }
-
-// .navbar-default {
-//     background-image: -webkit-linear-gradient(top,$navbar-color 0,$navbar-color-alt 100%);
-//     background-image: -o-linear-gradient(top,$navbar-color 0,$navbar-color-alt 100%);
-//     background-image: -webkit-gradient(linear,left top,left bottom,from($navbar-color),to($navbar-color-alt));
-//     background-image: linear-gradient(to bottom,$navbar-color 0,$navbar-color-alt 100%);
-// }

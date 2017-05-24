@@ -135,18 +135,22 @@
     text-align: left;
     color: #142D3C; }
 
-.side-menu {
-  background-color: #F0F5FA;
-  padding: 50px 20px; }
-
 .site-header .navbar {
   margin-bottom: 0px; }
 
-#nav-body-padding {
+.side-menu {
+  background-color: #F0F5FA;
+  padding: 50px 20px; }
+  .side-menu h1, .side-menu h2, .side-menu h3, .side-menu h4, .side-menu h5, .side-menu h6 {
+    margin-top: 0px; }
+  .side-menu .row {
+    margin-bottom: 20px; }
+
+.content, .side-menu {
   padding-top: 60px; }
 
 @media (min-width: 768px) {
-  #nav-body-padding {
+  .content, .side-menu {
     padding-top: 100px; } }
 
 a:hover {
