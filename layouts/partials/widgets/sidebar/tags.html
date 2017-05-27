@@ -4,7 +4,7 @@
     <h4>Popular Tags</h4>
     <p class="tag-cloud">
         {{ range first 10 .ByCount }}
-            <a href="{{ $.Site.BaseURL}}/tags/{{ .Name | urlize }}">{{ .Name }} ({{ .Count }})</a>
+            <a href="{{ $.Site.BaseURL}}tags/{{ .Name | urlize }}">{{ .Name }} ({{ .Count }})</a>
         {{ end }}
     </p>
   </div>
