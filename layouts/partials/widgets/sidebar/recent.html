@@ -2,9 +2,9 @@
   <div class="col-md-12">
     <h4>Recent Articles</h4>
     <ul>
-        {{ range first 5 .Data.Pages }}
-            <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
-        {{ end }}
+      {{ range first 5 .Site.Pages }}
+        <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+      {{ end }}
     </ul>
   </div>
 </div>
