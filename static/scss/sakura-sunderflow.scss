@@ -13,6 +13,7 @@ $font-size-base: 1.8rem;
     @import "sakura/main";
 
     /* Overwrite body and html tags to root */
+    font-family: $roboto;
     font-size: 62.5%; // So that root size becomes 10px
     // $font-size-base must be a rem value
     font-size: $font-size-base;
