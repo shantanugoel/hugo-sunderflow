@@ -268,4 +268,6 @@
 <footer class="site-footer">
     {{ partial "footer" }}
 </footer>
+{{ if ne (printf "%v" $.Site.BaseURL) "http://localhost:1313/" }}
 {{ template "_internal/google_analytics.html" . }} {{ end }}
+{{ end }}
