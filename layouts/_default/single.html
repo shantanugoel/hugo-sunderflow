@@ -1,11 +1,40 @@
 {{ define "content" }}
 <article class="post">
-<h1 class="post-title">{{ .Title }}</h1>
-{{ if ne .Type "page" }}
-<p class="meta"> {{ partial "post_meta.html" . }} </p>
-{{ end }}
-<!-- {{ partial "widgets/content/share.html" . }} -->
-{{ .Content }}
+  <h1 class="post-title">{{ .Title }}</h1>
+  {{ if ne .Type "page" }}
+  <p class="meta"> {{ partial "post_meta.html" . }} </p>
+  {{ end }}
+  <!-- {{ partial "widgets/content/share.html" . }} -->
+  {{if .Params.series}}
+	{{ $name := index .Params.series 0 }}
+  <p class="seriesname">Series: <a href="{{.Site.BaseURL}}series/{{$name | urlize}}">{{$name}}</a></p>
+  {{end}}
+  {{ .Content }}
+
+  {{ if .Params.series }}
+  {{ $link := .Permalink }}
+	{{ $name := index .Params.series 0 }}
+	<hr/>
+  <p><a href="" id="series"></a>This is a post in the <b>{{$name}}</b> series.<br/>
+    Other posts in this series:</p>
+  {{ $name := $name | urlize }}
+  {{.Site.Taxonomies.series}}
+  <!--
+  {{ $series := index .Site.Taxonomies.series $name }}
+  <ul class="series">
+    {{ range $series.Pages }}
+    <li>{{.Date.Format "Jan 02, 2006"}} -
+      {{ if eq .Permalink $link }}
+      {{.LinkTitle}}
+      {{else}}
+      <a href="{{.Permalink}}">{{.LinkTitle}} </a>
+      {{end}}
+    </li>
+    {{end}}
+  </ul>
+  -->
+	{{end}}
+
 </article>
 {{ if ne (printf "%v" $.Site.BaseURL) "http://localhost:1313/" }}
 {{ if or (ne .Type "page") (.Params.comments) }}
