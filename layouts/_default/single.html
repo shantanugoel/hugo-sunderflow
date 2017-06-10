@@ -7,7 +7,7 @@
   <!-- {{ partial "widgets/content/share.html" . }} -->
   {{if .Params.series}}
 	{{ $name := index .Params.series 0 }}
-  <p class="seriesname">Series: <a href="{{.Site.BaseURL}}series/{{$name | urlize}}">{{$name}}</a></p>
+  <p>Series: <a href="{{.Site.BaseURL}}series/{{$name | urlize}}">{{$name}}</a></p>
   {{end}}
   {{ .Content }}
 
@@ -15,12 +15,13 @@
   {{ $link := .Permalink }}
 	{{ $name := index .Params.series 0 }}
 	<hr/>
-  <p><a href="" id="series"></a>This is a post in the <b>{{$name}}</b> series.<br/>
-    Other posts in this series:</p>
+  <p><a href="" id="series"></a>This is a post in the <b><a href="{{.Site.BaseURL}}series/{{$name | urlize}}">{{$name}}</a></b> series.<br/>
   {{ $name := $name | urlize }}
-  {{.Site.Taxonomies.series}}
-  <!--
   {{ $series := index .Site.Taxonomies.series $name }}
+    {{ if gt $series.Pages .Site.Params.seriesListCountMax }}
+    This is a long series. Click above to see the rest of the posts
+    {{ else }}
+    Other posts in this series:</p>
   <ul class="series">
     {{ range $series.Pages }}
     <li>{{.Date.Format "Jan 02, 2006"}} -
@@ -32,8 +33,8 @@
     </li>
     {{end}}
   </ul>
-  -->
-	{{end}}
+    {{ end }}
+  {{end}}
 
 </article>
 {{ if ne (printf "%v" $.Site.BaseURL) "http://localhost:1313/" }}
